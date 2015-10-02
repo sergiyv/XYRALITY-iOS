@@ -3,11 +3,6 @@ platform :ios, '7.0'
 # ignore all warnings from all pods
 inhibit_all_warnings!
 
-# MagicalRecord - ActiveRecord-style wrapper for Core Data
-# Source: https://github.com/magicalpanda/MagicalRecord
-# License: Custom, https://github.com/magicalpanda/MagicalRecord/blob/master/LICENSE
-pod 'MagicalRecord', '2.2'
-
 # SVProgressHUD is a clean and easy-to-use HUD meant to display the progress of an ongoing task.
 # Source: https://github.com/samvermette/SVProgressHUD
 # License: MIT
