@@ -1,0 +1,831 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		331CB797CB1F1C2BE4F15115 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D4475E0C3DFCC37D48FE427 /* libPods.a */; };
+		4956E99D1BBED8930047B7C2 /* XYDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4956E99C1BBED8930047B7C2 /* XYDeviceInfo.m */; };
+		4956E9A11BBEE9CB0047B7C2 /* XYServerApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4956E9A01BBEE9CB0047B7C2 /* XYServerApiManager.m */; };
+		4956E9A51BBEEA9A0047B7C2 /* XYDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4956E9A41BBEEA9A0047B7C2 /* XYDataManager.m */; };
+		49B5613E1BBE8C7100DAEC7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B5613D1BBE8C7100DAEC7B /* main.m */; };
+		49B5615B1BBE8C7100DAEC7B /* XyralityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B5615A1BBE8C7100DAEC7B /* XyralityTests.m */; };
+		49B5616F1BBE8FBB00DAEC7B /* XYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B561671BBE8FBB00DAEC7B /* XYAppDelegate.m */; };
+		49B561701BBE8FBB00DAEC7B /* XYLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B5616B1BBE8FBB00DAEC7B /* XYLoginViewController.m */; };
+		49B561711BBE8FBB00DAEC7B /* XYMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B5616E1BBE8FBB00DAEC7B /* XYMainViewController.m */; };
+		49B561811BBE933500DAEC7B /* XYInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49B5617A1BBE933500DAEC7B /* XYInfo.plist */; };
+		49B561821BBE933500DAEC7B /* XYMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49B5617C1BBE933500DAEC7B /* XYMain.storyboard */; };
+		49B561831BBE933500DAEC7B /* XYLaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49B5617E1BBE933500DAEC7B /* XYLaunchScreen.xib */; };
+		49B561861BBE941E00DAEC7B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49B561851BBE941E00DAEC7B /* Images.xcassets */; };
+		49B561891BBE94AB00DAEC7B /* XYApiUrls.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B561881BBE94AB00DAEC7B /* XYApiUrls.m */; };
+		49B561A31BBEB24C00DAEC7B /* RACSignal+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B561A21BBEB24C00DAEC7B /* RACSignal+Extensions.m */; };
+		49B561BF1BBEC0CD00DAEC7B /* XYWorldDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B561B51BBEC0CD00DAEC7B /* XYWorldDataSource.m */; };
+		49B561C01BBEC0CD00DAEC7B /* XYHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B561B81BBEC0CD00DAEC7B /* XYHttpClient.m */; };
+		49B561C11BBEC0CD00DAEC7B /* XYScrollViewWithKeyboardWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B561BB1BBEC0CD00DAEC7B /* XYScrollViewWithKeyboardWrapper.m */; };
+		49B561C21BBEC0CD00DAEC7B /* XYThirdPartyWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B561BE1BBEC0CD00DAEC7B /* XYThirdPartyWrapper.m */; };
+		49B561C61BBEC13900DAEC7B /* UIView+FindFirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B561C51BBEC13900DAEC7B /* UIView+FindFirstResponder.m */; };
+		49F2AC221BBF09600049D1BB /* XYWorldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F2AC211BBF09600049D1BB /* XYWorldCell.m */; };
+		49F2AC271BBF09CC0049D1BB /* XYWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F2AC261BBF09CC0049D1BB /* XYWorld.m */; };
+		49F2AC2B1BBF0C6E0049D1BB /* NSString+Trimming.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F2AC2A1BBF0C6E0049D1BB /* NSString+Trimming.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49B561551BBE8C7100DAEC7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49B561301BBE8C7100DAEC7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49B561371BBE8C7100DAEC7B;
+			remoteInfo = Xyrality;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D4475E0C3DFCC37D48FE427 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4956E9981BBED4000047B7C2 /* XYConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYConstants.h; sourceTree = "<group>"; };
+		4956E99B1BBED8930047B7C2 /* XYDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYDeviceInfo.h; sourceTree = "<group>"; };
+		4956E99C1BBED8930047B7C2 /* XYDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYDeviceInfo.m; sourceTree = "<group>"; };
+		4956E99F1BBEE9CB0047B7C2 /* XYServerApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYServerApiManager.h; sourceTree = "<group>"; };
+		4956E9A01BBEE9CB0047B7C2 /* XYServerApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYServerApiManager.m; sourceTree = "<group>"; };
+		4956E9A31BBEEA9A0047B7C2 /* XYDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYDataManager.h; sourceTree = "<group>"; };
+		4956E9A41BBEEA9A0047B7C2 /* XYDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYDataManager.m; sourceTree = "<group>"; };
+		49B561381BBE8C7100DAEC7B /* Xyrality.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xyrality.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49B5613D1BBE8C7100DAEC7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		49B561541BBE8C7100DAEC7B /* XyralityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XyralityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49B561591BBE8C7100DAEC7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49B5615A1BBE8C7100DAEC7B /* XyralityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XyralityTests.m; sourceTree = "<group>"; };
+		49B561661BBE8FBB00DAEC7B /* XYAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYAppDelegate.h; sourceTree = "<group>"; };
+		49B561671BBE8FBB00DAEC7B /* XYAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYAppDelegate.m; sourceTree = "<group>"; };
+		49B5616A1BBE8FBB00DAEC7B /* XYLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYLoginViewController.h; sourceTree = "<group>"; };
+		49B5616B1BBE8FBB00DAEC7B /* XYLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYLoginViewController.m; sourceTree = "<group>"; };
+		49B5616D1BBE8FBB00DAEC7B /* XYMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYMainViewController.h; sourceTree = "<group>"; };
+		49B5616E1BBE8FBB00DAEC7B /* XYMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYMainViewController.m; sourceTree = "<group>"; };
+		49B5617A1BBE933500DAEC7B /* XYInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = XYInfo.plist; sourceTree = "<group>"; };
+		49B5617C1BBE933500DAEC7B /* XYMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = XYMain.storyboard; sourceTree = "<group>"; };
+		49B5617E1BBE933500DAEC7B /* XYLaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYLaunchScreen.xib; sourceTree = "<group>"; };
+		49B561851BBE941E00DAEC7B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		49B561871BBE94AB00DAEC7B /* XYApiUrls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYApiUrls.h; sourceTree = "<group>"; };
+		49B561881BBE94AB00DAEC7B /* XYApiUrls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYApiUrls.m; sourceTree = "<group>"; };
+		49B561991BBE986900DAEC7B /* XYSharedInstanceMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSharedInstanceMacros.h; sourceTree = "<group>"; };
+		49B5619A1BBE9B7F00DAEC7B /* XYMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYMacros.h; sourceTree = "<group>"; };
+		49B5619C1BBEACAC00DAEC7B /* XYCellWithObjectDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYCellWithObjectDelegate.h; sourceTree = "<group>"; };
+		49B5619E1BBEAD6200DAEC7B /* XYPrefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPrefix.pch; sourceTree = "<group>"; };
+		49B561A11BBEB24C00DAEC7B /* RACSignal+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSignal+Extensions.h"; sourceTree = "<group>"; };
+		49B561A21BBEB24C00DAEC7B /* RACSignal+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+Extensions.m"; sourceTree = "<group>"; };
+		49B561B41BBEC0CD00DAEC7B /* XYWorldDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYWorldDataSource.h; sourceTree = "<group>"; };
+		49B561B51BBEC0CD00DAEC7B /* XYWorldDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYWorldDataSource.m; sourceTree = "<group>"; };
+		49B561B71BBEC0CD00DAEC7B /* XYHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYHttpClient.h; sourceTree = "<group>"; };
+		49B561B81BBEC0CD00DAEC7B /* XYHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYHttpClient.m; sourceTree = "<group>"; };
+		49B561BA1BBEC0CD00DAEC7B /* XYScrollViewWithKeyboardWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYScrollViewWithKeyboardWrapper.h; sourceTree = "<group>"; };
+		49B561BB1BBEC0CD00DAEC7B /* XYScrollViewWithKeyboardWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYScrollViewWithKeyboardWrapper.m; sourceTree = "<group>"; };
+		49B561BD1BBEC0CD00DAEC7B /* XYThirdPartyWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYThirdPartyWrapper.h; sourceTree = "<group>"; };
+		49B561BE1BBEC0CD00DAEC7B /* XYThirdPartyWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYThirdPartyWrapper.m; sourceTree = "<group>"; };
+		49B561C41BBEC13900DAEC7B /* UIView+FindFirstResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FindFirstResponder.h"; sourceTree = "<group>"; };
+		49B561C51BBEC13900DAEC7B /* UIView+FindFirstResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FindFirstResponder.m"; sourceTree = "<group>"; };
+		49F2AC201BBF09600049D1BB /* XYWorldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYWorldCell.h; sourceTree = "<group>"; };
+		49F2AC211BBF09600049D1BB /* XYWorldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYWorldCell.m; sourceTree = "<group>"; };
+		49F2AC251BBF09CC0049D1BB /* XYWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYWorld.h; sourceTree = "<group>"; };
+		49F2AC261BBF09CC0049D1BB /* XYWorld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYWorld.m; sourceTree = "<group>"; };
+		49F2AC291BBF0C6E0049D1BB /* NSString+Trimming.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Trimming.h"; sourceTree = "<group>"; };
+		49F2AC2A1BBF0C6E0049D1BB /* NSString+Trimming.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Trimming.m"; sourceTree = "<group>"; };
+		93E4638608C556E1FCAF2B3E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		AD2A4D69010BC6B3CE26A6D8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49B561351BBE8C7100DAEC7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				331CB797CB1F1C2BE4F15115 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49B561511BBE8C7100DAEC7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DFA560F9FFE8D121C99F6F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D4475E0C3DFCC37D48FE427 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4956E9991BBED8930047B7C2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4956E99A1BBED8930047B7C2 /* DeviceInfo */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		4956E99A1BBED8930047B7C2 /* DeviceInfo */ = {
+			isa = PBXGroup;
+			children = (
+				4956E99B1BBED8930047B7C2 /* XYDeviceInfo.h */,
+				4956E99C1BBED8930047B7C2 /* XYDeviceInfo.m */,
+			);
+			path = DeviceInfo;
+			sourceTree = "<group>";
+		};
+		4956E99E1BBEE9CB0047B7C2 /* ServerApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				4956E99F1BBEE9CB0047B7C2 /* XYServerApiManager.h */,
+				4956E9A01BBEE9CB0047B7C2 /* XYServerApiManager.m */,
+			);
+			path = ServerApiManager;
+			sourceTree = "<group>";
+		};
+		4956E9A21BBEEA9A0047B7C2 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				4956E9A31BBEEA9A0047B7C2 /* XYDataManager.h */,
+				4956E9A41BBEEA9A0047B7C2 /* XYDataManager.m */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		49B5612F1BBE8C7100DAEC7B = {
+			isa = PBXGroup;
+			children = (
+				49B5613A1BBE8C7100DAEC7B /* Xyrality */,
+				49B561571BBE8C7100DAEC7B /* XyralityTests */,
+				49B561391BBE8C7100DAEC7B /* Products */,
+				6851E7FEC426623DE6CCD955 /* Pods */,
+				3DFA560F9FFE8D121C99F6F4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		49B561391BBE8C7100DAEC7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49B561381BBE8C7100DAEC7B /* Xyrality.app */,
+				49B561541BBE8C7100DAEC7B /* XyralityTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49B5613A1BBE8C7100DAEC7B /* Xyrality */ = {
+			isa = PBXGroup;
+			children = (
+				4956E9991BBED8930047B7C2 /* Utilities */,
+				49B561981BBE986900DAEC7B /* Macros */,
+				49B561721BBE933500DAEC7B /* Constants */,
+				49B5619B1BBEACAC00DAEC7B /* Protocols */,
+				49B561641BBE8FBB00DAEC7B /* Classes */,
+				49B561781BBE933500DAEC7B /* Resources */,
+				49B5613B1BBE8C7100DAEC7B /* Supporting Files */,
+			);
+			path = Xyrality;
+			sourceTree = "<group>";
+		};
+		49B5613B1BBE8C7100DAEC7B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				49B5613D1BBE8C7100DAEC7B /* main.m */,
+				49B5619E1BBEAD6200DAEC7B /* XYPrefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49B561571BBE8C7100DAEC7B /* XyralityTests */ = {
+			isa = PBXGroup;
+			children = (
+				49B5615A1BBE8C7100DAEC7B /* XyralityTests.m */,
+				49B561581BBE8C7100DAEC7B /* Supporting Files */,
+			);
+			path = XyralityTests;
+			sourceTree = "<group>";
+		};
+		49B561581BBE8C7100DAEC7B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				49B561591BBE8C7100DAEC7B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49B561641BBE8FBB00DAEC7B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				49B561651BBE8FBB00DAEC7B /* Application */,
+				49B5619F1BBEB24C00DAEC7B /* Categories */,
+				49B561B11BBEC0CD00DAEC7B /* Controllers */,
+				49F2AC231BBF09CC0049D1BB /* Data Model */,
+				49B561681BBE8FBB00DAEC7B /* View Controllers */,
+				49F2AC1D1BBF09600049D1BB /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		49B561651BBE8FBB00DAEC7B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				49B561661BBE8FBB00DAEC7B /* XYAppDelegate.h */,
+				49B561671BBE8FBB00DAEC7B /* XYAppDelegate.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		49B561681BBE8FBB00DAEC7B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				49B561691BBE8FBB00DAEC7B /* LoginViewController */,
+				49B5616C1BBE8FBB00DAEC7B /* MainViewController */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		49B561691BBE8FBB00DAEC7B /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				49B5616A1BBE8FBB00DAEC7B /* XYLoginViewController.h */,
+				49B5616B1BBE8FBB00DAEC7B /* XYLoginViewController.m */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		49B5616C1BBE8FBB00DAEC7B /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				49B5616D1BBE8FBB00DAEC7B /* XYMainViewController.h */,
+				49B5616E1BBE8FBB00DAEC7B /* XYMainViewController.m */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		49B561721BBE933500DAEC7B /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				4956E9981BBED4000047B7C2 /* XYConstants.h */,
+				49B561871BBE94AB00DAEC7B /* XYApiUrls.h */,
+				49B561881BBE94AB00DAEC7B /* XYApiUrls.m */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		49B561781BBE933500DAEC7B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				49B561841BBE941E00DAEC7B /* Images */,
+				49B561791BBE933500DAEC7B /* Property Lists */,
+				49B5617B1BBE933500DAEC7B /* Storyboards */,
+				49B5617D1BBE933500DAEC7B /* Xibs */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		49B561791BBE933500DAEC7B /* Property Lists */ = {
+			isa = PBXGroup;
+			children = (
+				49B5617A1BBE933500DAEC7B /* XYInfo.plist */,
+			);
+			path = "Property Lists";
+			sourceTree = "<group>";
+		};
+		49B5617B1BBE933500DAEC7B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				49B5617C1BBE933500DAEC7B /* XYMain.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		49B5617D1BBE933500DAEC7B /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				49B5617E1BBE933500DAEC7B /* XYLaunchScreen.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		49B561841BBE941E00DAEC7B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				49B561851BBE941E00DAEC7B /* Images.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		49B561981BBE986900DAEC7B /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				49B5619A1BBE9B7F00DAEC7B /* XYMacros.h */,
+				49B561991BBE986900DAEC7B /* XYSharedInstanceMacros.h */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+		49B5619B1BBEACAC00DAEC7B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				49B5619C1BBEACAC00DAEC7B /* XYCellWithObjectDelegate.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		49B5619F1BBEB24C00DAEC7B /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				49B561A01BBEB24C00DAEC7B /* RACSignal+Extensions */,
+				49B561C31BBEC13900DAEC7B /* UIView+FindFirstResponder */,
+				49F2AC281BBF0C6E0049D1BB /* NSString+Trimming */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		49B561A01BBEB24C00DAEC7B /* RACSignal+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				49B561A11BBEB24C00DAEC7B /* RACSignal+Extensions.h */,
+				49B561A21BBEB24C00DAEC7B /* RACSignal+Extensions.m */,
+			);
+			path = "RACSignal+Extensions";
+			sourceTree = "<group>";
+		};
+		49B561B11BBEC0CD00DAEC7B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				49B561B21BBEC0CD00DAEC7B /* Data Sources */,
+				4956E9A21BBEEA9A0047B7C2 /* DataManager */,
+				4956E99E1BBEE9CB0047B7C2 /* ServerApiManager */,
+				49B561B61BBEC0CD00DAEC7B /* HttpClient */,
+				49B561B91BBEC0CD00DAEC7B /* ScrollViewWithKeyboardWrapper */,
+				49B561BC1BBEC0CD00DAEC7B /* ThirdPartyWrapper */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		49B561B21BBEC0CD00DAEC7B /* Data Sources */ = {
+			isa = PBXGroup;
+			children = (
+				49B561B31BBEC0CD00DAEC7B /* WorldDataSource */,
+			);
+			path = "Data Sources";
+			sourceTree = "<group>";
+		};
+		49B561B31BBEC0CD00DAEC7B /* WorldDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				49B561B41BBEC0CD00DAEC7B /* XYWorldDataSource.h */,
+				49B561B51BBEC0CD00DAEC7B /* XYWorldDataSource.m */,
+			);
+			path = WorldDataSource;
+			sourceTree = "<group>";
+		};
+		49B561B61BBEC0CD00DAEC7B /* HttpClient */ = {
+			isa = PBXGroup;
+			children = (
+				49B561B71BBEC0CD00DAEC7B /* XYHttpClient.h */,
+				49B561B81BBEC0CD00DAEC7B /* XYHttpClient.m */,
+			);
+			path = HttpClient;
+			sourceTree = "<group>";
+		};
+		49B561B91BBEC0CD00DAEC7B /* ScrollViewWithKeyboardWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				49B561BA1BBEC0CD00DAEC7B /* XYScrollViewWithKeyboardWrapper.h */,
+				49B561BB1BBEC0CD00DAEC7B /* XYScrollViewWithKeyboardWrapper.m */,
+			);
+			path = ScrollViewWithKeyboardWrapper;
+			sourceTree = "<group>";
+		};
+		49B561BC1BBEC0CD00DAEC7B /* ThirdPartyWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				49B561BD1BBEC0CD00DAEC7B /* XYThirdPartyWrapper.h */,
+				49B561BE1BBEC0CD00DAEC7B /* XYThirdPartyWrapper.m */,
+			);
+			path = ThirdPartyWrapper;
+			sourceTree = "<group>";
+		};
+		49B561C31BBEC13900DAEC7B /* UIView+FindFirstResponder */ = {
+			isa = PBXGroup;
+			children = (
+				49B561C41BBEC13900DAEC7B /* UIView+FindFirstResponder.h */,
+				49B561C51BBEC13900DAEC7B /* UIView+FindFirstResponder.m */,
+			);
+			path = "UIView+FindFirstResponder";
+			sourceTree = "<group>";
+		};
+		49F2AC1D1BBF09600049D1BB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				49F2AC1E1BBF09600049D1BB /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		49F2AC1E1BBF09600049D1BB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				49F2AC1F1BBF09600049D1BB /* XIWorldCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		49F2AC1F1BBF09600049D1BB /* XIWorldCell */ = {
+			isa = PBXGroup;
+			children = (
+				49F2AC201BBF09600049D1BB /* XYWorldCell.h */,
+				49F2AC211BBF09600049D1BB /* XYWorldCell.m */,
+			);
+			path = XIWorldCell;
+			sourceTree = "<group>";
+		};
+		49F2AC231BBF09CC0049D1BB /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				49F2AC241BBF09CC0049D1BB /* World */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		49F2AC241BBF09CC0049D1BB /* World */ = {
+			isa = PBXGroup;
+			children = (
+				49F2AC251BBF09CC0049D1BB /* XYWorld.h */,
+				49F2AC261BBF09CC0049D1BB /* XYWorld.m */,
+			);
+			path = World;
+			sourceTree = "<group>";
+		};
+		49F2AC281BBF0C6E0049D1BB /* NSString+Trimming */ = {
+			isa = PBXGroup;
+			children = (
+				49F2AC291BBF0C6E0049D1BB /* NSString+Trimming.h */,
+				49F2AC2A1BBF0C6E0049D1BB /* NSString+Trimming.m */,
+			);
+			path = "NSString+Trimming";
+			sourceTree = "<group>";
+		};
+		6851E7FEC426623DE6CCD955 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93E4638608C556E1FCAF2B3E /* Pods.debug.xcconfig */,
+				AD2A4D69010BC6B3CE26A6D8 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49B561371BBE8C7100DAEC7B /* Xyrality */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49B5615E1BBE8C7100DAEC7B /* Build configuration list for PBXNativeTarget "Xyrality" */;
+			buildPhases = (
+				9DEF21B046768BA83CCF23B5 /* Check Pods Manifest.lock */,
+				49B561341BBE8C7100DAEC7B /* Sources */,
+				49B561351BBE8C7100DAEC7B /* Frameworks */,
+				49B561361BBE8C7100DAEC7B /* Resources */,
+				34C1F9091CF43F06C3C6823F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Xyrality;
+			productName = Xyrality;
+			productReference = 49B561381BBE8C7100DAEC7B /* Xyrality.app */;
+			productType = "com.apple.product-type.application";
+		};
+		49B561531BBE8C7100DAEC7B /* XyralityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49B561611BBE8C7100DAEC7B /* Build configuration list for PBXNativeTarget "XyralityTests" */;
+			buildPhases = (
+				49B561501BBE8C7100DAEC7B /* Sources */,
+				49B561511BBE8C7100DAEC7B /* Frameworks */,
+				49B561521BBE8C7100DAEC7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49B561561BBE8C7100DAEC7B /* PBXTargetDependency */,
+			);
+			name = XyralityTests;
+			productName = XyralityTests;
+			productReference = 49B561541BBE8C7100DAEC7B /* XyralityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49B561301BBE8C7100DAEC7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = BrightGrove;
+				TargetAttributes = {
+					49B561371BBE8C7100DAEC7B = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					49B561531BBE8C7100DAEC7B = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 49B561371BBE8C7100DAEC7B;
+					};
+				};
+			};
+			buildConfigurationList = 49B561331BBE8C7100DAEC7B /* Build configuration list for PBXProject "Xyrality" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49B5612F1BBE8C7100DAEC7B;
+			productRefGroup = 49B561391BBE8C7100DAEC7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49B561371BBE8C7100DAEC7B /* Xyrality */,
+				49B561531BBE8C7100DAEC7B /* XyralityTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49B561361BBE8C7100DAEC7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49B561821BBE933500DAEC7B /* XYMain.storyboard in Resources */,
+				49B561861BBE941E00DAEC7B /* Images.xcassets in Resources */,
+				49B561811BBE933500DAEC7B /* XYInfo.plist in Resources */,
+				49B561831BBE933500DAEC7B /* XYLaunchScreen.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49B561521BBE8C7100DAEC7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34C1F9091CF43F06C3C6823F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DEF21B046768BA83CCF23B5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49B561341BBE8C7100DAEC7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49B561C01BBEC0CD00DAEC7B /* XYHttpClient.m in Sources */,
+				49F2AC221BBF09600049D1BB /* XYWorldCell.m in Sources */,
+				49B561C61BBEC13900DAEC7B /* UIView+FindFirstResponder.m in Sources */,
+				49B561BF1BBEC0CD00DAEC7B /* XYWorldDataSource.m in Sources */,
+				4956E9A51BBEEA9A0047B7C2 /* XYDataManager.m in Sources */,
+				49B5616F1BBE8FBB00DAEC7B /* XYAppDelegate.m in Sources */,
+				49B561891BBE94AB00DAEC7B /* XYApiUrls.m in Sources */,
+				49B5613E1BBE8C7100DAEC7B /* main.m in Sources */,
+				49F2AC2B1BBF0C6E0049D1BB /* NSString+Trimming.m in Sources */,
+				49B561C21BBEC0CD00DAEC7B /* XYThirdPartyWrapper.m in Sources */,
+				49B561A31BBEB24C00DAEC7B /* RACSignal+Extensions.m in Sources */,
+				49B561701BBE8FBB00DAEC7B /* XYLoginViewController.m in Sources */,
+				4956E9A11BBEE9CB0047B7C2 /* XYServerApiManager.m in Sources */,
+				49B561711BBE8FBB00DAEC7B /* XYMainViewController.m in Sources */,
+				49F2AC271BBF09CC0049D1BB /* XYWorld.m in Sources */,
+				49B561C11BBEC0CD00DAEC7B /* XYScrollViewWithKeyboardWrapper.m in Sources */,
+				4956E99D1BBED8930047B7C2 /* XYDeviceInfo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49B561501BBE8C7100DAEC7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49B5615B1BBE8C7100DAEC7B /* XyralityTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49B561561BBE8C7100DAEC7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49B561371BBE8C7100DAEC7B /* Xyrality */;
+			targetProxy = 49B561551BBE8C7100DAEC7B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		49B5615C1BBE8C7100DAEC7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		49B5615D1BBE8C7100DAEC7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49B5615F1BBE8C7100DAEC7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93E4638608C556E1FCAF2B3E /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = Xyrality/XYPrefix.pch;
+				INFOPLIST_FILE = "$(SRCROOT)/Xyrality/Resources/Property Lists/XYInfo.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		49B561601BBE8C7100DAEC7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD2A4D69010BC6B3CE26A6D8 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = Xyrality/XYPrefix.pch;
+				INFOPLIST_FILE = "$(SRCROOT)/Xyrality/Resources/Property Lists/XYInfo.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		49B561621BBE8C7100DAEC7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = XyralityTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Xyrality.app/Xyrality";
+			};
+			name = Debug;
+		};
+		49B561631BBE8C7100DAEC7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = XyralityTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Xyrality.app/Xyrality";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49B561331BBE8C7100DAEC7B /* Build configuration list for PBXProject "Xyrality" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49B5615C1BBE8C7100DAEC7B /* Debug */,
+				49B5615D1BBE8C7100DAEC7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49B5615E1BBE8C7100DAEC7B /* Build configuration list for PBXNativeTarget "Xyrality" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49B5615F1BBE8C7100DAEC7B /* Debug */,
+				49B561601BBE8C7100DAEC7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49B561611BBE8C7100DAEC7B /* Build configuration list for PBXNativeTarget "XyralityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49B561621BBE8C7100DAEC7B /* Debug */,
+				49B561631BBE8C7100DAEC7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49B561301BBE8C7100DAEC7B /* Project object */;
+}
